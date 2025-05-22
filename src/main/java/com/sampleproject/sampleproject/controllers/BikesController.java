@@ -16,7 +16,7 @@ public class BikesController {
     private BikeService bikeservice;
 
     // POST API to add a bike
-    @PostMapping("api/bikeadd")
+    @PostMapping("api/newbike")
     public BikeEntity addbike(@RequestBody BikeEntity bike) {
         return bikeservice.addbikes(bike);
     }
